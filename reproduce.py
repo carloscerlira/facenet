@@ -19,7 +19,7 @@ from metrics import gen_scores_files
 from evaluate import gen_roc, gen_loss_curve
 from train import train_model 
 
-# REPRODUCE ROC AND LOSS CURVE
+# REPRODUCE ROC
 # this will generate auxiliar csv files found in logs/preprocess
 create_labels(args)
 # this will generate pickle score files found in logs/scores
@@ -31,7 +31,7 @@ gen_roc()
 # This one can take a few hours 
 # train_model(args)
 # this will generate loss curve found at logs/img/loss.png
-gen_loss_curve()
+# gen_loss_curve()
 
 # To test our pretrained model with image 
 model = get_iimas_model(pretrained=True)

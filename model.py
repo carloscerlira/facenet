@@ -54,7 +54,7 @@ class FaceNetModel(nn.Module):
         res = self.model.classifier(features)
         return res
 
-model_url = 'https://github.com/carloscerlira/facenet/releases/download/facenet/iimas_model.pth'
+model_url = 'https://github.com/carloscerlira/facenet/releases/download/v1/iimas_model.pth'
 
 # def load_state(url):
 #     state = load_state_dict_from_url(url, progress=True)
@@ -66,6 +66,8 @@ model_url = 'https://github.com/carloscerlira/facenet/releases/download/facenet/
 #         state = load_state(model_url)
 #         model.load_state_dict(state['state_dict'])
 #     return model
+
+# get_iimas_model()
 
 def get_iimas_model(pretrained=True):
     model = FaceNetModel()
