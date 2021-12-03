@@ -1,5 +1,5 @@
 # FaceNet
-FaceNet model implemented by UNAM IIMAS students as final project of machine learning class.  
+FaceNet model implemented by UNAM IIMAS students as final project.  
 
 You can find information about the implementation on paper.pdf, it is based on the paper "FaceNet: A Unified Embedding for Face Recognition and Clustering".  
 
